@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/day_done_rel_layout"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast_frame"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context="com.bitbylogic.android.workoutapp.DayDoneActivity">
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:text="@string/grats" android:layout_width="wrap_content"
+            android:textColor="@color/theme_red"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/Divider" />
+
+        <TextView android:text="@string/day_done" android:layout_width="wrap_content"
+            android:textColor="@color/theme_red"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="@string/get_rest" android:layout_width="wrap_content"
+            android:textColor="@color/theme_red"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/day_done_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/close_day_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/close_day_button_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

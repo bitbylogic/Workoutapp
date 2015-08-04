@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.bitbylogic.android.workoutapp.ThemeActivity">
+
+    <LinearLayout
+        android:id="@+id/theme_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        >
+
+        <View style="@style/Divider"
+            />
+
+        <TextView android:text="Theme Chooser" android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:background="@drawable/blue_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize ="18sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/theme_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View style="@style/Divider"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quit_button"/>
+
+            <View
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="5dp"/>
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@id/theme_buttons"
+        android:layout_below="@id/theme_top"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/edit_values_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/theme_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/theme_blue_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="35dp"
+                    android:text="@string/blue_theme"
+                    android:textColor="@color/theme_blue"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/theme_mixed_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="35dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_blue"
+                    android:text="@string/mixed_theme" />
+
+                <RadioButton
+                    android:id="@+id/theme_red_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_blue"
+                    android:text="@string/red_theme" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

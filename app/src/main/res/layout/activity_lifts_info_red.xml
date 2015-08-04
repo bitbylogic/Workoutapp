@@ -1,0 +1,234 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.bitbylogic.android.workoutapp.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/lifts_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <View style="@style/DividerRed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lifts_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View style="@style/DividerRed"
+            android:paddingBottom="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quit_button"/>
+
+            <View
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="5dp"/>
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/next_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lifts_buttons"
+        android:layout_below="@id/lifts_top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lift_welcome"
+                android:text="@string/lift_welcome" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:textSize = "16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/DividerRed"
+                />
+
+            <TextView android:text="@string/squat_title" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/squat_info"
+                android:text="@string/squat_info" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+            <TextView android:text="@string/bench_title" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bench_info"
+                android:text="@string/bench_info" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+            <TextView android:text="@string/row_title" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/row_info"
+                android:text="@string/row_info" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+            <TextView android:text="@string/overpress_title" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/overpress_info"
+                android:text="@string/overpress_info" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+            <TextView android:text="@string/deadlift_title" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/deadlift_info"
+                android:text="@string/deadlift_info" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+            <TextView android:text="@string/curl_title" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/curl_info"
+                android:text="@string/curl_info" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/DividerRed"
+                />
+
+            <TextView android:text="@string/alt_intro" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="16sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/row_alt"
+                android:text="@string/row_alt" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shoulder_press_alt"
+                android:text="@string/shoulder_press_alt" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/stiff_alt"
+                android:text="@string/stiff_alt" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/curl_alt"
+                android:text="@string/curl_alt" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

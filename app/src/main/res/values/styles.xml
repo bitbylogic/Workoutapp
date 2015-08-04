@@ -1,0 +1,197 @@
+<!--suppress CheckTagEmptyBody -->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CustomActionBarTheme"
+        parent="@style/android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Button.Borderless</item>
+        <item name="android:buttonBarStyle">@style/ButtonBar.AlertDialog</item>
+        </style>
+
+    <style name="MixedActionBarTheme"
+        parent="@style/android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text_red</item>
+        <item name="android:actionOverflowButtonStyle">@style/MixedOverFlow</item>
+        <item name="android:itemTextAppearance">@style/MixedTextAppearance</item>
+        <item name="android:popupMenuStyle">@style/MixedPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/MixedPopupMenuListView</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Button.Borderless</item>
+        <item name="android:buttonBarStyle">@style/MixedButtonBar.AlertDialog</item>
+    </style>
+
+    <style name="RedActionBarTheme"
+        parent="@style/android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/RedMyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text_red</item>
+        <item name="android:actionOverflowButtonStyle">@style/RedOverFlow</item>
+        <item name="android:itemTextAppearance">@style/RedTextAppearance</item>
+        <item name="android:popupMenuStyle">@style/RedPopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/RedPopupMenuListView</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Button.Borderless</item>
+        <item name="android:buttonBarStyle">@style/RedButtonBar.AlertDialog</item>
+    </style>
+
+    <style name="Widget.Button.Borderless" parent="@android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.DialogButton</item>
+    </style>
+
+    <style name="TextAppearance.DialogButton" parent="@android:style/TextAppearance.Holo.Medium"></style>
+
+    <style name="RedTextAppearance.DialogButton" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textColor">@color/theme_red</item>
+    </style>
+
+    <style name="ButtonBar.AlertDialog" parent="@android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:background">@color/theme_blue</item>
+    </style>
+
+    <style name="MixedButtonBar.AlertDialog" parent="@android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:background">@color/theme_red</item>
+    </style>
+
+    <style name="RedButtonBar.AlertDialog" parent="@android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:background">@color/theme_red</item>
+    </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@color/theme_blue</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="MixedPopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@color/theme_blue</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="RedPopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@color/theme_red</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="PopupMenu" parent="android:Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/bg_toast_frame</item>
+    </style>
+
+    <style name="MixedPopupMenu" parent="android:Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/bg_toast_frame</item>
+    </style>
+
+    <style name="RedPopupMenu" parent="android:Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/bg_toast_frame_red</item>
+    </style>
+
+    <style name="PopupDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/theme_blue</item>
+    </style>
+
+    <style name="RedPopupDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/theme_red</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/theme_blue</item>
+    </style>
+
+    <style name="MixedTextAppearance">
+        <item name="android:textColor">@color/theme_red</item>
+    </style>
+
+    <style name="RedTextAppearance">
+        <item name="android:textColor">@color/theme_red</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/overflow</item>
+    </style>
+
+    <style name="MixedOverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/overflow_red_blue</item>
+    </style>
+
+    <style name="RedOverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/overflow_red</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@style/android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/barbell_actionbar</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+    <style name="RedMyActionBar"
+        parent="@style/android:Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/barbell_actionbar_red</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+        parent="@style/android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <style name="RedMyActionBarTitleText"
+        parent="@style/android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text_red</item>
+    </style>
+
+    <!-- ActionBar tabs text styles -->
+    <style name="MyActionBarTabText"
+        parent="@style/android:Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_text</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/theme_blue</item>
+    </style>
+
+    <style name="DividerRed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/theme_red</item>
+    </style>
+
+    <style name="ButtonTheme" parent="android:style/Widget.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/blue_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">0dip</item>
+    </style>
+
+    <style name="RedButtonTheme" parent="android:style/Widget.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/red_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">0dip</item>
+    </style>
+
+    <style name="EditTextTheme" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textColor">@color/theme_blue</item>
+        <item name="android:drawableBottom">@color/theme_blue</item>
+    </style>
+
+    <style name="RedEditTextTheme" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textColor">@color/theme_red</item>
+        <item name="android:drawableBottom">@color/theme_red</item>
+    </style>
+
+
+</resources>

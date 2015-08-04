@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cycle_done_rel_layout"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast_frame"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context="com.bitbylogic.android.workoutapp.LiftCycleActivity">
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:text="@string/check_success" android:layout_width="wrap_content"
+            android:textColor="@color/theme_blue"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView android:text="@string/explain_success" android:layout_width="wrap_content"
+            android:textColor="@color/theme_blue"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/Divider" />
+
+        <CheckBox
+            android:id="@+id/squat_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/squat_title" />
+        <CheckBox
+            android:id="@+id/bench_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bench_title" />
+        <CheckBox
+            android:id="@+id/row_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/row_title" />
+        <CheckBox
+            android:id="@+id/overpress_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overpress_title" />
+        <CheckBox
+            android:id="@+id/deadlift_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deadlift_title" />
+        <CheckBox
+            android:id="@+id/curl_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/curl_title" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/cycle_done_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/close_cycle_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:theme="@style/ButtonTheme"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="@string/close_cycle_button_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.bitbylogic.android.workoutapp.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/welcome_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <View style="@style/Divider"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/welcome_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View style="@style/Divider"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/quit_button"/>
+
+            <View
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="5dp"/>
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/next_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/welcome_buttons"
+        android:layout_below="@id/welcome_top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="@string/grats" android:layout_width="match_parent"
+                android:id="@+id/grats_view"
+                android:textColor="@color/theme_blue"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:textSize ="16sp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/welcome_message"
+                android:text="@string/welcome" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/rep_cycle"
+                android:text="@string/rep_cycle" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/day_cycle"
+                android:text="@string/day_cycle" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/cycle_prog"
+                android:text="@string/cycle_prog" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/Divider"
+                />
+
+            <TextView
+                android:id="@+id/safety"
+                android:text="@string/safety" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:layout_gravity="center"
+                android:paddingEnd="15dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+
+            <View style="@style/Divider"
+                />
+
+            <TextView
+                android:id="@+id/lifts"
+                android:text="@string/lifts" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:layout_marginTop="45dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/warmups"
+                android:text="@string/warmups" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/determine_wt"
+                android:text="@string/determine_wt" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView android:text="@string/rep_calc" android:layout_width="match_parent"
+                android:id="@+id/rep_calc"
+                android:textColor="@color/theme_blue"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="35dp"
+                android:textColorLink="@color/theme_blue"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/missed_day"
+                android:text="@string/missed_day" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/disclaimer"
+                android:text="@string/disclaimer" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/to_menu"
+                android:text="@string/to_menu" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/welcome_next"
+                android:text="@string/welcome_next" android:layout_width="match_parent"
+                android:textColor="@color/theme_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

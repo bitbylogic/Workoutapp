@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bitbylogic.android.workoutapp" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/buff_andy" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProgressActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_progress"
+            android:taskAffinity=".ProgressActivity"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.ProgressActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:logo="@drawable/buff_andy"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.WelcomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetupActivity"
+            android:label="@string/title_activity_setup"
+            android:logo="@drawable/buff_andy"
+            android:theme="@style/CustomActionBarTheme"
+            android:parentActivityName=".WelcomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.WelcomeActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.SetupActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LiftsInfoActivity"
+            android:label="@string/title_activity_lifts_info"
+            android:logo="@drawable/buff_andy"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.LiftsInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DayDoneActivity"
+            android:label="@string/title_activity_day_done"
+            android:logo="@drawable/buff_andy"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.DayDoneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_timer"
+            android:launchMode="singleInstance"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.TimerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LiftCycleActivity"
+            android:label="@string/title_activity_lift_cycle"
+            android:logo="@drawable/buff_andy"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.LiftCycleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecretActivity"
+            android:label="@string/title_activity_secret"
+            android:logo="@drawable/buff_andy"
+            android:theme="@style/CustomActionBarTheme"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.SecretActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReconcileActivity"
+            android:label="@string/title_activity_reconcile"
+            android:logo="@drawable/buff_andy"
+            android:theme="@style/CustomActionBarTheme"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.ReconcileActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ThemeActivity"
+            android:label="@string/title_activity_theme"
+            android:theme="@style/CustomActionBarTheme"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bitbylogic.android.workoutapp.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.bitbylogic.android.workoutapp.ThemeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

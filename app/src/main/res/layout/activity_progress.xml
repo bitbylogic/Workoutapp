@@ -1,0 +1,361 @@
+<TableLayout
+    android:id="@+id/prog_table"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_toast_frame"
+    tools:context="com.bitbylogic.android.workoutapp.ProgressActivity">
+
+
+    <TableRow
+        android:id="@+id/prog_row"
+        android:layout_width = "match_parent"
+        android:background="@drawable/blue_button"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prog_label_lift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/prog_label_then"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/prog_label_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black" />
+
+    </TableRow>
+
+        <View style="@style/Divider" android:gravity="center_horizontal"
+            />
+
+    <TableRow
+        android:id="@+id/squat_row"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/squat_name"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:textAlignment="center"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/squat_then"
+            android:layout_width="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="start"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/squat_now"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+    </TableRow>
+
+    <View style="@style/Divider" android:gravity="center_horizontal"
+        />
+
+    <TableRow
+        android:id="@+id/bench_row"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bench_name"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/bench_then"
+            android:layout_width="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/bench_now"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+    </TableRow>
+
+    <View style="@style/Divider" android:gravity="center_horizontal"
+        />
+
+    <TableRow
+        android:id="@+id/rows_row"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rows_name"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/rows_then"
+            android:layout_width="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/rows_now"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+    </TableRow>
+
+    <View style="@style/Divider" android:gravity="center_horizontal"
+        />
+
+    <TableRow
+        android:id="@+id/press_row"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/press_name"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/press_then"
+            android:layout_width="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/press_now"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+    </TableRow>
+
+    <View style="@style/Divider" android:gravity="center_horizontal"
+        />
+
+    <TableRow
+        android:id="@+id/stiff_row"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/stiff_name"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/stiff_then"
+            android:layout_width="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/stiff_now"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+    </TableRow>
+
+    <View style="@style/Divider" android:gravity="center_horizontal"
+        />
+
+    <TableRow
+        android:id="@+id/curls_row"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/curls_name"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/curls_then"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/theme_blue" />
+
+        <TextView
+            android:id="@+id/curls_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:paddingStart="2dp"
+            android:paddingEnd="12dp"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/theme_blue" />
+
+    </TableRow>
+
+    <View style="@style/Divider"
+        android:paddingTop="16dp"
+        android:gravity="center_horizontal"/>
+
+    <TableRow
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:theme="@style/ButtonTheme"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/return_button_text" />
+
+
+
+    </TableRow>
+</TableLayout>
+

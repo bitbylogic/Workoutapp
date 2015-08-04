@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.bitbylogic.android.workoutapp.ReconcileActivity">
+
+    <LinearLayout
+        android:id="@+id/reconcile_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        >
+
+        <View style="@style/DividerRed"
+            />
+
+        <TextView
+            android:id="@+id/reconcile_title"
+            android:text="@string/action_reconcile" android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textSize ="20sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reconcile_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View style="@style/DividerRed"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/back_button"/>
+
+            <View
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="5dp"/>
+
+            <Button android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@id/reconcile_buttons"
+        android:layout_below="@id/reconcile_top"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/edit_values_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reconcile_message"
+                android:text="@string/reconcile_message" android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/theme_red"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize ="18sp"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="35dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/theme_red"
+                android:textColor="@color/theme_red"
+                android:drawableBottom="@color/theme_red"
+                android:theme="@style/RedEditTextTheme"
+                android:hint="000000000000"
+                android:inputType="number"
+                android:textColorHint="#00FFFFFF"
+                android:maxLength="3"
+                android:id="@+id/squat_update"
+                android:digits="0123456789" />
+
+            <TextView android:text="@string/squat_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/theme_red"
+                android:textSize ="16sp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/theme_red"
+                android:textColor="@color/theme_red"
+                android:drawableBottom="@color/theme_red"
+                android:theme="@style/RedEditTextTheme"
+                android:inputType="number"
+                android:hint="000000000000"
+                android:textColorHint="#00FFFFFF"
+                android:maxLength="3"
+                android:id="@+id/bench_update"
+                android:digits="0123456789" />
+
+
+            <TextView android:text="@string/bench_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/theme_red"
+                android:textSize ="16sp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/theme_red"
+                android:textColor="@color/theme_red"
+                android:drawableBottom="@color/theme_red"
+                android:theme="@style/RedEditTextTheme"
+                android:hint="000000000000"
+                android:inputType="number"
+                android:textColorHint="#00FFFFFF"
+                android:maxLength="3"
+                android:id="@+id/row_update"
+                android:digits="0123456789" />
+
+            <TextView android:text="@string/row_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/theme_red"
+                android:textSize ="16sp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/theme_red"
+                android:drawableBottom="@color/theme_red"
+                android:textColor="@color/theme_red"
+                android:theme="@style/RedEditTextTheme"
+                android:hint="000000000000"
+                android:inputType="number"
+                android:textColorHint="#00FFFFFF"
+                android:maxLength="3"
+                android:id="@+id/overpress_update"
+                android:digits="0123456789" />
+
+            <TextView android:text="@string/overpress_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/theme_red"
+                android:textSize ="16sp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/theme_red"
+                android:drawableBottom="@color/theme_red"
+                android:textColor="@color/theme_red"
+                android:theme="@style/RedEditTextTheme"
+                android:hint="000000000000"
+                android:textColorHint="#00FFFFFF"
+                android:maxLength="3"
+                android:id="@+id/deadlift_update"
+                android:digits="0123456789" />
+
+            <TextView android:text="@string/deadlift_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/theme_red"
+                android:textSize ="16sp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/theme_red"
+                android:inputType="number"
+                android:drawableBottom="@color/theme_red"
+                android:textColor="@color/theme_red"
+                android:theme="@style/RedEditTextTheme"
+                android:hint="000000000000"
+                android:textColorHint="#00FFFFFF"
+                android:maxLength="3"
+                android:id="@+id/curl_update"
+                android:digits="0123456789" />
+
+            <TextView android:text="@string/curl_title"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="35dp"
+                android:textColor="@color/theme_red"
+                android:textSize ="16sp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

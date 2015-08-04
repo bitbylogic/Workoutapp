@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">WorkoutApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_reset">Start Program Over</string>
+    <string name="action_progress">Workout Progress</string>
+    <string name="action_program">About Program</string>
+    <string name="title_activity_progress">Progress</string>
+    <string name="return_button_text">RETURN</string>
+    <string name="close_day_button_text">CLOSE OUT DAY</string>
+    <string name="close_cycle_button_text">CYCLE FINISHED</string>
+    <string name="check_success">Checkmark your successes</string>
+    <string name="return_day_button_text">RETURN TO DAY</string>
+    <string name="title_activity_welcome">Program Info</string>
+    <string name="rest_timer_title">REST TIMER</string>
+    <string name="stop">STOP</string>
+    <string name="time_rem_msg">Time Remaining: </string>
+    <string name="setup">Enter Starting Weights</string>
+    <string name="title_activity_setup">Setup</string>
+    <string name="action_lifts">About Lifts</string>
+    <string name="grats">Congratulations!</string>
+    <string name="day_done">You made it!</string>
+    <string name="get_rest">Don\'t forget to rest up!</string>
+    <string name="exercise">Exercise:</string>
+    <string name="set">This Set: </string>
+    <string name="day">Day: "</string>
+    <string name="weight">Weight: </string>
+    <string name="reps">Lift Reps: </string>
+    <string name="welcome"><![CDATA[
+    <html><body><p style="text-align:justify">You\'ve taken a great step towards the new you. On this page, we\'ll offer an explanation
+     of how this program works. Then we\'ll setup your starting weights, and explain how to determine those. There\'s
+     quite a bit of information here, but don\'t worry. The app will handle all of the calculations and tracking for you.</p></body></html>]]></string>
+    <string name="rep_cycle"><![CDATA[
+    <html><body><p style="text-align:justify">This program is based on the principle that adding 1 rep is approximately equivalent to
+     adding 10% to your working weight. So through the course of each cycle, you\'ll increase your reps by 1 each week (
+    from 8 to 12). Then after 5 weeks, we\'ll reset back to 8 reps and repeat. </p></body></html>]]></string>
+    <string name="day_cycle"><![CDATA[
+    <html><body><p style="text-align:justify">Resting between workouts is just as important as the exercises themselves. Therefore, we
+     recommend you try to allow for 8 hours of sleep per day. In that spirit, we also step down the intensity of each
+     day\'s workout throughout the 3-day week. On Day 1, you\'ll use 100\%% of your working weight. On Day 2, you\'ll drop
+     down to 90\%%. On Day 3, 80\%%. Since all 6 exercises are essentially "full-body" lifts, it\'s important to follow
+     this method so that your body has enough rest to continually increase load week after week.</p></body></html>]]></string>
+    <string name="cycle_prog"><![CDATA[
+    <html><body><p style="text-align:justify">On Day 1 of your 5th week of each cycle, you\'ll note whether you were successful in all 12
+     reps of each particular exercise WITH PROPER FORM. If you were, then the app will add 10% weight for your next cycle.
+     For any individual exercises that you weren\'t successful at that weight, don\'t worry. You\'ll just stay at that same
+     weight for the next cycle. We bet that you\'ll be successful next time.</p></body></html>]]></string>
+    <string name="star_separator">******</string>
+    <string name="safety">IMPORTANT: DON\'T SACRIFICE PROPER FORM FOR THE SAKE OF WEIGHT OR REPS!</string>
+    <string name="lifts"><![CDATA[
+    <html><body><p style="text-align:justify">The 6 primary exercises you\'ll be doing are the Squat, Bench Press, Row, Shoulder Press, Stiff-
+    Legged Deadlift, and the Curl. You\'re probably noticing that you don\'t see any abdominal exercises here. That\'s
+     because since these lifts are all full-body exercises, you\'ll already be building up your core strength. After cycle 2,
+     if you feel you want to add abdominal exercises to your routine, we suggest you do so on off-days. But give yourself
+     a couple of cycles first so your bones and supporting tissues can get used to carrying the barbell and weights. Whenever
+     possible, these exercises should be performed using a barbell. Isolation machines simply don\'t provide the same kind
+     of bone density and supporting tissue growth that the barbell offers. </p></body></html>]]></string>
+    <string name="alt_intro">Acceptable alternative approaches:</string>
+    <string name="row_alt"><![CDATA[
+    <html><body><p style="text-align:justify">Rows can be done with either barbell or dumbells, depending on availability</p></body></html>]]></string>
+    <string name="shoulder_press_alt"><![CDATA[
+    <html><body><p style="text-align:justify">Shoulder Presses should be done standing, if possible. And can be done with either barbell
+     dumbells. If standing is not an option (for instance, if you\'re using a Smith machine), then seated Presses are fine.</p></body></html>]]></string>
+    <string name="stiff_alt"><![CDATA[
+    <html><body><p style="text-align:justify">If Stiff-Legged Deadlifts are too difficult to perform correctly, you can bend at the knees to
+     make it more comfortable. You will still get the same back and hamstring workout either way.</p></body></html>]]></string>
+    <string name="curl_alt"><![CDATA[
+    <html><body><p style="text-align:justify">Curls can be done with dumbells if you prefer, or a curling bar. If you are using dumbells, just
+     make sure to come to a complete stop between each rep, so that you are not "swinging" the dumbells.</p></body></html>]]></string>
+    <string name="warmups"><![CDATA[
+    <html><body><p style="text-align:justify">For the first 3 exercises each day (Squat, Bench, Row), you\'ll do 2 warmup sets prior to your
+     2 working sets. Each of the remaining exercises will require only 2 sets at working weight. Your first warmup set will be
+     at 25\%% of your working weight and the second warmup set will be at 50\%%. If either of these is less than a bare barbell,
+     then just use the barbell (Olympic barbell is 45lbs).</p></body></html>]]></string>
+    <string name="determine_wt"><![CDATA[
+    <html><body><p style="text-align:justify">You will use your 10 rep max for each exercise. To determine your 10 rep maxes, go to the gym
+        one day (at least 2 days BEFORE starting the routine), and perform one set of each exercise until failure (as many reps
+        as you can do with good form). Try and pick a weight that will bring you to failure at around 10 reps (for a more accurate
+        calculation). Take note of the weight you used and how many reps took you to failure and then plug them in to this
+        calculator linked below. This will give you your 10 rep max (your weights cycle 1)</p></body></html>]]></string>
+    <string name="rep_calc">The 10-rep calculator link is </string>
+    <string name="missed_day"><![CDATA[
+    <html><body><p style="text-align:justify">If you can only get to the gym 2 days in a particular week, don\'t worry. Just do 100% weight for
+     both of those days.</p></body></html>]]></string>
+    <string name="disclaimer"><![CDATA[
+    <html><body><p style="text-align:justify">You should consult a physician before embarking on any weight-lifting program. As well, if you
+     experience PAIN during lifting, STOP immediately and consult your physician. This is a lifestyle, not a marathon. Stay safe!</p></body></html>]]></string>
+    <string name="to_menu"><![CDATA[
+    <html><body><p style="text-align:justify">We recommend you open the exercise instruction page from the menu at the top right of the screen to
+     familiarize yourself with the details of each exercise. Also, at any time during the program, if you need to reset your
+     lifting data, you can do so from the same menu.</p></body></html>]]></string>
+    <string name="welcome_next"><![CDATA[
+    <html><body><p style="text-align:justify">Are you ready to begin? Just click SETUP and we\'ll setup your starting weights after you
+     determine your 10-rep max, as mentioned above.</p></body></html>]]></string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_lifts_info">Lifts Info</string>
+    <string name="lift_info">Information about Lifts</string>
+    <string name="lift_welcome"><![CDATA[
+    <html><body><p style="text-align:justify">On this page we will provide some information that will briefly describe each of the exercises you
+     will be performing during this program. We suggest that if you are unfamiliar with these lifts, please research proper
+         form beyond what is included in this short message. If any exercise is difficult to perform or causes pain, please
+        consult a physician and adjust accordingly.</p></body></html>]]></string>
+    <string name="squat_title">Squat</string>
+    <string name="bench_title">Bench Press</string>
+    <string name="row_title">Row</string>
+    <string name="overpress_title">Shoulder Press</string>
+    <string name="deadlift_title">Stiff-Legged Deadlift</string>
+    <string name="curl_title">Curl</string>
+    <string name="bench_info"><![CDATA[
+    <html><body><p style="text-align:justify"> Lay flat on bench with hands about 12 inches wider than shoulders. Pinch shoulder
+         blades together, as if you were trying to hold a quarter between them. With feet flat on the floor, arch your
+         back upwards slightly. Lower the bar in line across the middle of your chest. If it helps your lift,
+         you can allow the bar to gently bounce off of your chest.</p></body></html>]]></string>
+    <string name="squat_info"><![CDATA[
+    <html><body><p style="text-align:justify"> Hold bar across shoulders, behind your head, with hands much wider than shoulder
+     width apart.Pinch shoulder blades together, as if you were trying to hold a quarter between them. Do
+     not allow your hands to roll back, which will make your hands/wrists/arms support the bar. The bar should be supported
+     solely by your back. Feet should be slightly wider than shoulder width, and your feet should be angled in the
+     direction that your knees will be travelling, as to avoid undo lateral pressure on your knees. Keep your chin and
+     chest up. It helps if you remain looking at a point on the ceiling across the room. Push backwards with your
+     butt and then bend your knees, which will allow the bar to lower until your thighs are parallel with the floor.
+        Make certain to keep your feet flat with the weight on your heels. Your knees should NEVER travel beyond
+         the middle of your feet. Keep your back as flat as possible. Imagine a straight line being drawn from
+         your head, down your back, and off your butt. It can also help to have a friend watch you to help you
+         from not allowing your butt to curl down and up again when transitioning from
+         down to up position.</p></body></html>]]></string>
+    <string name="row_info"><![CDATA[
+    <html><body><p style="text-align:justify"> Hold the bar with hands shoulderwidth apart.Keep your shoulders up and back.
+        Bend your knees slightly, and lean your back forward at about a 45 degree angle.Pull the bar upwards
+         toward the area between your chest and your abdomen for each rep.</p></body></html>]]></string>
+    <string name="overpress_info"><![CDATA[
+    <html><body><p style="text-align:justify"> While standing, support the bar across your chest just below shoulder height.
+    Hands should be a bit wider than shoulder width apart, and legs should be spread about the same.While pushing
+         the bar upwards, keep your back straight and your chest up. Move your head back to allow the bar to travel
+         upwards, rather than moving the bar around your head.When you reach the top of the lift, continue a bit
+         higher by shrugging your shoulders up.</p></body></html>]]></string>
+    <string name="deadlift_info"><![CDATA[
+    <html><body><p style="text-align:justify"> While bending and lifting with your knees, bring the bar up from the floor to a
+     standing position.Hold the bar with feet and hands about shoulder width apart.While keeping
+     your shoulders up and back straight, push back with your butt while allowing the bar to travel down a straight line
+     towards the floor.It is important to keep your back straight and your shoulders up so you do not hurt your back.
+    At the bottom of the motion, you should feel your hamstrings stretch. Initiate the upward return by pushing your hips
+     forward as you return your back to an upright position.At the top of the motion, arch your back and push
+         your chest out.</p></body></html>]]></string>
+    <string name="curl_info"><![CDATA[
+    <html><body><p style="text-align:justify"> While bending and lifting with your knees, bring the bar up from the floor to a
+     standing position.Hands and feet should be shoulderwidth apart or narrower.With your arms hanging
+     straight down, begin the curling motion.Keep your elbows in a fixed position at your side during the lift.
+        At the top of the curl, squeeze your forearm and biceps together.</p></body></html>]]></string>
+    <string name="title_activity_day_done">Day Finished</string>
+    <string name="title_activity_timer">Rest Timer</string>
+    <string name="title_activity_lift_cycle">Successful Lifts</string>
+    <string name="explain_success">(lifts that you were successful completing all 12 reps at 100% on Day 1 with proper form)</string>
+    <string name="title_activity_secret">Admin</string>
+    <string name="title_activity_reconcile">Reconcile</string>
+    <string name="action_reconcile">Reconcile Weights</string>
+    <string name="reconcile_message">You can adjust your weights here.</string>
+    <string name="action_theme">Color Theme</string>
+    <string name="blue_theme">Blue Theme</string>
+    <string name="red_theme">Red Theme</string>
+    <string name="mixed_theme">Mixed Theme</string>
+    <string name="select">SELECT</string>
+    <string name="title_activity_theme">Color Theme</string>
+
+</resources>
